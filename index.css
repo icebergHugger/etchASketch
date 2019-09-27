@@ -1,0 +1,49 @@
+html{
+  background-color: #dbdbdb;
+}
+#container {
+  max-width : 40vw;
+  max-height : 40vh;
+  min-width: 40vw;
+  min-height: 40vh;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  align-items : center;
+  flex-direction: column;
+}
+
+input{
+  width: 40px;
+  background-color: #ebebeb;
+}
+
+form {
+  margin: 10px;
+}
+
+h4{
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  border: .5px black solid;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}

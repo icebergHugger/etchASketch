@@ -1,31 +1,118 @@
 html{
   background-color: #dbdbdb;
 }
+
+.title{
+  font-family: "squada One", helvetica, serif;
+  font-size: 4.5em;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  color: #6b6157;
+}
+
+.mainTitle{
+  padding: 0;
+  margin: 20px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#colorBox {
+    border: 1px black solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  background-color: #e3a86d;
+}
+
+#optionBox{
+  border: 1px black solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  background-color: #e3a86d;
+}
+
+button {
+  height: 3em;
+  width: 13em;
+  border: 3px #6b6157 solid;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  transition: 0.2s;
+  outline: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.1em;
+  margin: 0px 15px;
+}
+
+.buttonWidth {
+  width: 7em;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+#sizeBox {
+  margin: 40px 10px;
+  border-radius: 12px;
+  border : 5px #6b6157 solid;
+  text-align: center;
+}
+
+#sizeBox h1 {
+  font-family: "squada One", helvetica, serif;
+  color: #6b6157;
+  font-size: 7em;
+  letter-spacing: 0.05em;
+  margin: 10px 0px 50px 0px;
+}
+
+#sizeBox input{
+  border: 3px #6b6157 solid;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  outline: none;
+  transform: scale(2);
+  height: 2em;
+  width: 5em;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.colorPresets{
+  border-radius: 12px;
+  border : 5px #6b6157 solid;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorPickerBox {
+  margin: 20px;
+  border-radius: 12px;
+  border : 5px #6b6157 solid;
+  text-align: center;
+}
+
 #container {
-  max-width : 40vw;
-  max-height : 40vh;
+  max-width : 30vw;
   min-width: 40vw;
-  min-height: 40vh;
-  margin: 0 auto;
 }
 
 #header {
   display: flex;
   align-items : center;
   flex-direction: column;
-}
-
-input{
-  width: 40px;
-  background-color: #ebebeb;
-}
-
-form {
-  margin: 10px;
-}
-
-h4{
-  margin-top: 0;
 }
 
 .row {
@@ -38,12 +125,4 @@ h4{
 
 .blue{
   background-color: blue;
-}
-
-.red{
-  background-color: red;
-}
-
-.green {
-  background-color: green;
 }

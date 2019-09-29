@@ -1,6 +1,6 @@
 let gridHeight = 30;
 let gridWidth = 30;
-let color; //3 buttons on bottom that change the color
+let color;
 
 const container = document.querySelector("#container");
 createGrid();

@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+  <head lang="en">
+    <title>Sketch</title>
+    <link href="https://fonts.googleapis.com/css?family=Squada+One|Varela+Round&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="etch.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="title mainTitle">Etch-a-Sketch</h1>
+    </div>
+    <div id="main">
+      <div id="colorBox">
+        <h1 class="title">Colors.</h2>
+        <div class="colorPresets">
+            <h2 class="title" style="font-size: 2em;">Color Presets</h2>
+            <div id="colorRow_1">
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="blue">
+                <span class="circle blue"></span>
+              </label>
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="green">
+                <span class="circle green"></span>
+              </label>
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="red">
+                <span class="circle red"></span>
+              </label>
+            </div>
+            <div id="colorRow_2">
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="brown">
+                <span class="circle brown"></span>
+              </label>
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="purple">
+                <span class="circle purple"></span>
+              </label>
+              <label class="radioContainer">
+                <input type="radio" checked="checked" name="color" value="aqua">
+                <span class="circle aqua"></span>
+              </label>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="rainbowBtn" type="button">Rainbow</button>
+          </div>
+        </div>
+      <div id="container">
+      </div>
+      <div id="optionBox">
+        <h1 class="title">Options.</h1>
+        <button id="clearButton">Clear Canvas</button>
+        <div id="sizeBox">
+          <h1>SIZE?</h1>
+          <p id="errorMessage"></p>
+          <input id="sizeInput" type="text" name="size" maxlength="2"
+          value="">
+          <br>
+          <button id="sizeButton">Create Canvas</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="etch.js"></script>
+</html>

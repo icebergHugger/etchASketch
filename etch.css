@@ -15,6 +15,37 @@ html{
   margin: 20px;
 }
 
+.radioContainer {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin: 40px 50px;
+}
+
+.radioContainer input{
+  display: none;
+}
+
+.radioContainer .circle{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -40;
+  top: -40;
+  border-radius: 50%;
+}
+
+.radioContainer:hover .circle{
+  border: 3px #808080 solid;
+}
+
+.radioContainer input:checked + .circle {
+  border: 3px #545454 solid;
+}
+
+
 #main {
   display: flex;
   justify-content: center;
@@ -49,10 +80,6 @@ button {
   margin: 0px 15px;
 }
 
-.buttonWidth {
-  width: 7em;
-}
-
 button:hover {
   transform: scale(1.1);
 }
@@ -73,10 +100,10 @@ button:active {
   color: #6b6157;
   font-size: 7em;
   letter-spacing: 0.05em;
-  margin: 10px 0px 50px 0px;
+  margin: 10px 0px 20px 0px;
 }
 
-#sizeBox input{
+#sizeBox input[type="text"]{
   border: 3px #6b6157 solid;
   border-radius: 12px;
   background-color: #e0e0e0;
@@ -85,7 +112,14 @@ button:active {
   height: 2em;
   width: 5em;
   margin-bottom: 25px;
-  padding-left: 20px;
+  padding-left: 23px;
+}
+
+#sizeButton {
+  border: 5px #6b6157 solid;
+  border-radius: 18px;
+  width : 10em;
+  margin-bottom: 20px;
 }
 
 .colorPresets{
@@ -95,13 +129,11 @@ button:active {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  background-color: #e8e8e8;
 }
 
-.colorPickerBox {
-  margin: 20px;
-  border-radius: 12px;
-  border : 5px #6b6157 solid;
-  text-align: center;
+#colorRow_2{
+  margin-bottom: 10px;
 }
 
 #container {
@@ -124,5 +156,25 @@ button:active {
 }
 
 .blue{
-  background-color: blue;
+  background-color: #8dbce6;
+}
+
+.green {
+  background-color : #a1d285;
+}
+
+.red {
+  background-color: #ec7178;
+}
+
+.brown {
+  background-color: #a57171;
+}
+
+.purple {
+  background-color: #9d9dca;
+}
+
+.aqua{
+  background-color: #71c4c6;
 }

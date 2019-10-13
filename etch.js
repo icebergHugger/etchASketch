@@ -31,21 +31,25 @@ let colorValue;
 function clickResponse(event){
   for(let i = 0; i < colors.length; i++){
     if(colors[i].checked){
-        colorValue = colors[i].value;
+        if(colors[i].value == "rainbow") {
+          event.target.style.backgroundColor = rainbowColor();
+        }else{
+          colorValue = colors[i].value;
+          event.target.style.backgroundColor = "";
+          event.target.className = "";
+          event.target.classList.add("column");
+          event.target.classList.add(colorValue);
+        }
     }
   }
-    event.target.style.backgroundColor = "";
-    event.target.className = "";
-    event.target.classList.add("column");
-    event.target.classList.add(colorValue);
 }
 
-/*
+
 function rainbowColor(){
   let randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   return randomColor;
 }
-*/
+
 
 let clearButton = document.querySelector("#clearButton");
 clearButton.addEventListener("click", clear);

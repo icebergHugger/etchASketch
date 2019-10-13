@@ -130,6 +130,15 @@ button:active {
   display: flex;
   flex-direction: column;
   background-color: #e8e8e8;
+  align-items: center;
+}
+
+h2.title.rainbowT {
+  margin: 7px 0px;
+}
+
+.radioContainer.rainbowButton {
+  margin: 50px;
 }
 
 #colorRow_2{
@@ -177,4 +186,8 @@ button:active {
 
 .aqua{
   background-color: #71c4c6;
+}
+
+.rainbow {
+  background: linear-gradient(to right , #8dbce6, #a1d285, #ec7178, #9d9dca);
 }
